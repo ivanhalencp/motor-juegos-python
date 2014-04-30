@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : Guy.xml
+    Created on : 12 de marzo de 2011, 06:14 PM
+    Author     : ivo
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+    <!-- DATOS GENERALES DE LA ANIMACION -->
+    <general imagen='Guy.gif' animacionInicial='parado' />
+    <!-- ANIMACIONES -->
+    <animaciones>
+        <animacion nombre='parado' />
+        <animacion nombre='caminando' />
+        <animacion nombre='pegando' />
+    </animaciones>
+     <!-- CUERPOS CHOQUE -->
+    <cuerposChoque>
+        <cuerpoChoque nombre='pies' x='4' y='40' ancho='48' alto='16' />
+    </cuerposChoque>
+    <!-- FOTOGRAMAS -->
+    <fotogramas>
+        <fotograma nombre='parado_1' x='54' y='5' ancho='56' alto='96' cuerpoChoque='pies' />
+        <fotograma nombre='parado_2' x='115' y='5' ancho='56' alto='96' cuerpoChoque='pies' />
+        <fotograma nombre='parado_3' x='173' y='5' ancho='56' alto='96' cuerpoChoque='pies' />
+    </fotogramas>
+    <!-- RELACION FOTOGRAMA ANIMACION -->
+    <fotoAnimaciones>
+        <fotoAnimacion nombreAnimacion='parado' nombreFotograma='parado_1' duracion='30' />
+        <fotoAnimacion nombreAnimacion='parado' nombreFotograma='parado_2' duracion='30' />
+        <fotoAnimacion nombreAnimacion='parado' nombreFotograma='parado_3' duracion='30' />
+    </fotoAnimaciones>
+</root>
